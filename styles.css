@@ -34,6 +34,12 @@ section{
     align-content: center;
     margin-bottom: 1rem;
 }
+@media (max-width: 500px){
+    .title-motto{
+        width: 110%;
+        gap: 10px;
+    }
+}
 .title-content{
     display: flex;
     flex-direction: column;
@@ -95,6 +101,12 @@ figure:hover img{
     width: 30%;
     float: right;
     border-radius: 0.5rem;
+    margin-right: 10px;
+}
+@media (max-width: 500px){
+    .karte>img{
+        width: 40%;
+    }
 }
 .interessen-container{
     margin-bottom: 1rem;
@@ -118,11 +130,9 @@ hr{
     margin-bottom: 1rem;
     clear: both;
 }
-#erfolge>img{
-    float: left;
-    width: 200px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+.results-grid{
+    display: grid;
+    grid-template-columns: min-content auto;
 }
 .project-grid{
     display: grid;
